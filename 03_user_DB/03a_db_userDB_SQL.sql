@@ -30,5 +30,5 @@ VALUES ('johndoe1234', 'Doe', 'Johnny');
 
 /* Inhalte : Ergebnistabelle */
 SELECT * FROM boo.users;
-
+-- nice :)
 
