@@ -25,5 +25,9 @@ VALUES  ('johndoe123', 'Doe', 'John', SHA1('1234')),
 
 
 /* Inhalte : Ergebnistabelle */
-SELECT * FROM boo.users -- nice :)
+SELECT 
+userName AS "Vorname",
+firstName
+
+FROM boo.users ;-- nice :)
 
