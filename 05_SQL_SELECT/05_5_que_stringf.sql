@@ -19,17 +19,16 @@ SELECT
 FROM stocks.ccc
 #ggf. Restriktionen
 LIMIT 10;
-*/
 
 -- UPPER() --> alles in Großbuchstaben
-/*
-SELECT
-	ticker AS "SYM",
-    upper(c_name) "Unternehmen"
-FROM stocks.ccc
-#ggf. Restriktionen
-LIMIT 10;
-*/
+/**/
+\! cls
+-- SELECT
+-- 	ticker AS "SYM",
+--     upper(c_name) "Unternehmen"
+-- FROM stocks.ccc
+-- #ggf. Restriktionen
+-- LIMIT 10;
 
 
 -- LOWER() --> alles in Kleinbuchstaben (zb. bei mail-Adressen)
@@ -59,6 +58,8 @@ LIMIT 20;
 
 -- REPLACE() --> Ersetzen von Stringanteilen
 /**/
+
+
 SELECT
 	ticker AS "SYM",
     c_name "Unternehmen",

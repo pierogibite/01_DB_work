@@ -1,18 +1,20 @@
+\! cls 
+
 /*QUERIES - Distinct*/
 
 -- alle Sektoren
-/*
-SELECT
-    sector
-FROM stocks.ccc
-#ORDER BY sector ASC
-LIMIT 50
-;
-*/
+/**/
+-- SELECT
+--     sector
+-- FROM stocks.ccc
+-- #ORDER BY sector ASC
+-- LIMIT 50
+-- ;
+
 
 -- nur das 1. Auftreten eines Eintrags wird betrachtet
 -- welche VERSCHIEDENE Sektoren gibt es?
-/*
+/**/
 SELECT
     DISTINCT sector Industriesektoren
 FROM stocks.ccc
@@ -20,7 +22,6 @@ FROM stocks.ccc
 ORDER BY Industriesektoren DESC
 LIMIT 50
 ;
-*/
 
 
 -- welche VERSCHIEDENEN Branchen gibt es?
