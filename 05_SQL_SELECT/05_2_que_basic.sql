@@ -15,10 +15,10 @@ Ausgabe beschränken
 -- hier mit Verknüpfung CONCAT() // String-Fkt.
 SELECT
    ticker AS "SYM",
-   -- price AS "Kurs in $",
-   c_name AS Unternehmen
+   price AS "Kurs in $",
+   c_name AS Unternehmen,
    -- industry Branche
-   -- concat( sector, " | ", industry) AS "Operations"
+   concat( sector, " | ", industry) AS "Operations" --verknüpft zwei Zeilen und trennt sie mit dem Symbol
 FROM stocks.ccc
 -- LIMIT 200,10
 -- LIMIT 1
