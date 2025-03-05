@@ -1,9 +1,13 @@
 -- SELECT * FROM boo.customers;
 \! cls
 SELECT
-Name,
-EMail,
-address,
+Name AS 'Kundename',
 homeTown
+-- EMail,
+-- address,
+-- homeTown
 FROM boo.customers
-LIMIT 10;
+WHERE homeTown = "Berlin"
+ORDER BY Age DESC;
+-- ORDER BY AGE ASC, homeTown DESC;
+-- LIMIT 20;

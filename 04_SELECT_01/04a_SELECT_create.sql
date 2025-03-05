@@ -1,8 +1,11 @@
 # Vorbereitung SELECT 
 \! cls
-
 DROP TABLE IF EXISTS boo.customers;
 
+ALTER DATABASE boo CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE boo.customers CONVERT TO CHARACTER SET utf8mb4 COLLATE 
+SET NAMES 'utf8mb4';
+SET CHARACTER SET 'utf8mb4';
 # Tabelle erzeugen
 CREATE TABLE IF NOT EXISTS boo.customers (
     ID INT NOT NULL,
@@ -15,6 +18,13 @@ CREATE TABLE IF NOT EXISTS boo.customers (
     homeTown VARCHAR(150)
 );
 
+ALTER TABLE customers CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- SET NAMES 'utf8mb4';
+-- SET CHARACTER SET 'utf8mb4';
+
+SHOW VARIABLES LIKE 'character_set%';
+SHOW VARIABLES LIKE 'collation%'
 # Inserts
 INSERT INTO boo.customers (ID, Name, address,  phoneNumber, EMail, age, state, homeTown)
 VALUES
@@ -72,4 +82,4 @@ VALUES
 
 
 
-
+SELECT * FROM boo.customers;
